@@ -1,0 +1,7 @@
+pyyaml==6.0
+tqdm==4.64.0
+open3d==0.14.1
+numpy==1.19.5
+plotly==4.14.1
+pandas==1.1.5
+scipy==1.5.4

@@ -1,0 +1,27 @@
+
+CREATE-BENCHMARK:
+  FAUST-DATA-PATH: '/media/davidboja/1TB_DISK/datasets/MPI-FAUST/training/scans/'
+  SAVE-TO: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed'
+  VISUALIZE: False
+  ICOSAHEDRON-SCALE: 1.5
+  ICOSAHAEDRON-NR-DIVISIONS: 2 # this splits the edges of the icosahaedron -- start with 12 points, then 42, 162, 642,..
+  DESIRED-OVERLAP-LOWER-BOUND: 60 # leaving only overlaps with >= desired lower bound overlap 
+  DESIRED-OVERLAP-UPPER-BOUND: 100 # leaving only overlaps with <= desired upper bound overlap
+  DESIRED-ROTATION-LOWER-BOUND-DEGREES: 0 # 0 degrees: generate random rotation from LOWER-BOUND-DEGREES to UPPER-BOUND-DEGREES
+  DESIRED-ROTATION-UPPER-BOUND-DEGREES: 45 # 45 degrees
+  DESIRED-TRANSLATION-LOWER-BOUND-METERS: -0.5 # 50cm generate random transl from LOWER-BOUND-TRANSL to UPPER-BOUND-TRANSL
+  DESIRED-TRANSLATION-UPPER-BOUND-METERS: 0.5 # 50cm
+  BENCHMARK-CSV-NAME: 'benchmark-faust-partial-ico42_overlap60-100.csv'
+
+VISUALIZE-BENCHMARK:
+  FAUST-DATA-PATH: '/media/davidboja/1TB_DISK/datasets/MPI-FAUST/training/scans/'
+  BENCHMARK-CSV-PATH: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed'
+  BENCHMARK-CSV-NAME: 'benchmark-faust-partial-ico42_overlap60-100.csv'
+  FAUST-SCAN-NAME: 'tr_scan_000'
+  VIEWPOINT1: 0
+  VIEWPOINT2: 4
+
+LOAD-BENCHMARK:
+  FAUST-DATA-PATH: '/media/davidboja/1TB_DISK/datasets/MPI-FAUST/training/scans/'
+  BENCHMARK-CSV-PATH: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed'
+  BENCHMARK-CSV-NAME: 'benchmark-faust-partial-ico42_overlap60-100.csv'
