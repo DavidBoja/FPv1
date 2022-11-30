@@ -73,6 +73,3 @@ If you use our work, please reference our paper:
 ## References
 [1] [Bogo et al.: Faust: Dataset and evaluation for 3D mesh registration. CVPR 2014](https://files.is.tue.mpg.de/black/papers/FAUST2014.pdf) <br />
 [2] [Katz et al.: Direct visibility of point sets. ACM Transactions on Graphics 2007](https://www.weizmann.ac.il/math/ronen/sites/math.ronen/files/uploads/katz_tal_basri_-_direct_visibility_of_point_sets.pdf)
-
-## 🚧 TODO
-- [ ] Fix the data in `data/benchmark_ico12_overlap60plus_withT.csv`
