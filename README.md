@@ -1,6 +1,7 @@
 # FAUST-partial: 3D registration benchmark dataset
 
-Code for creating the FAUST-partial 3D registration benchmark from the paper: "Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration" presented at the BMVC 2022 workshop (URCV 22).
+[[Paper](https://arxiv.org/abs/2211.16301)][[Model Implementation](https://github.com/DavidBoja/greedy-grid-search)] </br >
+Code for creating the FAUST-partial 3D registration benchmark from the paper: "Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration" presented at the BMVC 2022 workshop (URCV 22). For the baseline implementation please check [this Github repo](https://github.com/DavidBoja/greedy-grid-search).
 
 <p align="center">
   <img src="https://github.com/DavidBoja/FAUST-partial/blob/main/assets/FAUST-partial-teaser.png" width="1000">
@@ -55,10 +56,24 @@ $$ VERTICES = 12 + \frac{3}{2} \sum_{i=0}^{N-1} (20 \times 4^i) $$
 
 where `N` is the number of splits -- same as `ICOSAHAEDRON-NR-DIVISIONS`.
 
+## 3D Registration results
+
+| Method                                                            | RR(\%)           | RRE(&deg;)    | RTE(cm)          |
+|-------------------------------------------------------------------|------------------|------------------|------------------|
+| FPFH-8M  [3]                    | 9.51             | 4.347            | 1.900            |
+| SpinNet  [4]                                         | 42.46            | 3.105            | 1.670            |
+| GeoTransformer [5]  | 56.15            | 2.423            | 1.581            |
+| FCGF+PointDSC [6]                                      | 47.85            | 3.354            | 1.793            |
+| FCGF+YOHO-O [7]                                           | 18.91            | 4.489            | 1.852            |
+| FCGF+YOHO-C [7]                                            | 29.18            | 3.653            | 1.668            |
+| DIP [8]                                                    | 54.81            | 4.058            | 2.052            |
+| Baseline                                                          | $\mathbf{92.81}$ | $\mathbf{0.014}$ | $\mathbf{0.009}$ |
+
+For more details please check our paper.
 
 ## Citation
 
-If you use our work, please reference our paper:
+If you use our work, please reference our paper
 
 ```
 @inproceedings{Bojanić-BMVC22-workshop,
@@ -72,4 +87,10 @@ If you use our work, please reference our paper:
 
 ## References
 [1] [Bogo et al.: Faust: Dataset and evaluation for 3D mesh registration. CVPR 2014](https://files.is.tue.mpg.de/black/papers/FAUST2014.pdf) <br />
-[2] [Katz et al.: Direct visibility of point sets. ACM Transactions on Graphics 2007](https://www.weizmann.ac.il/math/ronen/sites/math.ronen/files/uploads/katz_tal_basri_-_direct_visibility_of_point_sets.pdf)
+[2] [Katz et al.: Direct visibility of point sets. ACM Transactions on Graphics 2007](https://www.weizmann.ac.il/math/ronen/sites/math.ronen/files/uploads/katz_tal_basri_-_direct_visibility_of_point_sets.pdf) <br />
+[3] [Rusu et al.: Fast Point Feature Histograms (FPFH) for 3D registration. ICRA 2009](https://ieeexplore.ieee.org/document/5152473) <br />
+[4] [Ao et al.: SpinNet: Learning a General Surface Descriptor for 3D Point Cloud Registration. CVPR 2021](https://arxiv.org/abs/2011.12149) <br />
+[5] [Zheng et al.: Geometric Transformer for Fast and Robust Point Cloud Registration. CVPR 2022](https://arxiv.org/abs/2202.06688) <br />
+[6] [Bai et al.: PointDSC: Robust Point Cloud Registration Using Deep Spatial Consistency. CVPR 2021](https://arxiv.org/abs/2103.05465) <br />
+[7] [Wang et al: You Only Hypothesize Once: Point Cloud Registration with Rotation-equivariant Descriptors. ACM Multimedia 2022](https://arxiv.org/abs/2109.00182) <br />
+[8] [Poiesi et al.: Distinctive 3D local deep descriptors. Pattern Recognition 2021](https://arxiv.org/abs/2009.00258) <br />
