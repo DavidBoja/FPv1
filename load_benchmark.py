@@ -16,10 +16,10 @@ T_COLS = ['T00','T01','T02','T03',
 
 def process_single_example(ind,benchmark,faust_data_path,indices_path):
     
-    scan_name = benchmark[ind,'Scan']
-    viewpoint_i = benchmark[ind,'Scan']
-    viewpoint_j = benchmark[ind,'Scan']
-    overlap = benchmark[ind,'Scan']
+    scan_name = benchmark.loc[ind,'Scan']
+    viewpoint_i = benchmark.loc[ind,'Viewpoint_i']
+    viewpoint_j = benchmark.loc[ind,'Viewpoint_j']
+    overlap = benchmark.loc[ind,'overlap']
     T_gt = np.array(benchmark[ind,T_COLS]).astype('float64').reshape(4,4)
 
     indices_path = osp.join(indices_path,
@@ -57,6 +57,7 @@ def load_benchmark(config):
     for ind in range(N):
 
         # the goal is to register pcj to pci
+        # NOTE: this script does nothing -- extend script to do your bidding
         return_dict = process_single_example(ind,benchmark,faust_data_path,partial_view_indices_path)
 
 
