@@ -25,3 +25,9 @@ LOAD-BENCHMARK:
   FAUST-DATA-PATH: '/media/davidboja/1TB_DISK/datasets/MPI-FAUST/training/scans/'
   BENCHMARK-CSV-PATH: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed'
   BENCHMARK-CSV-NAME: 'benchmark-faust-partial-ico42_overlap60-100.csv'
+
+EVALUATE:
+  BENCHMARK-CSV-FULL-PATH: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed/benchmark-faust-partial-ico42_overlap60-100.csv'
+  RESULTS-CSV-FULL-PATH: '/media/davidboja/1TB_DISK/datasets/FAUST-partial-processed/benchmark-faust-partial-ico42_overlap60-100.csv'
+  THRESHOLD-ROTATION: 10
+  THRESHOLD-TRANSLATION: 0.03 # 3cm
