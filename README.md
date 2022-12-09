@@ -44,6 +44,12 @@ To use the benchmark:
 1. Setup the paths and variables in `config.yaml` under the `LOAD-BENCHMARK` category
 2. Run `python load_benchmark.py` script -- additionally modifying the script to your needs
 
+We provide the `evaluate.py` script that can be used to evaluate your results. The assumption is that your results are stored in the same way the `data/benchmark_ico12_overlap60plus_withT.csv` file is.
+
+To evaluate the RR, RRE and RTE measures on the benchmark:
+1. Setup the paths and variables in `config.yaml` under the `EVALUATE` category
+2. Run `python evaluate.py` script
+
 ## Notes on Icosahaedron
 
 The regular icosahaedron has 12 vertices and 20 triangular faces. Each vertex lies on the unit sphere and acts as a viewpoint from which we generate the partial point cloud. To obtain a higher resolution of the viewpoints, we provide a splitting strategy for the icosahaedron. To split an icosahaedron, each edge is split to create an additional vertex. This vertex is then projected to the unit sphere.
