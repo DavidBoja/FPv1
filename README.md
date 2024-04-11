@@ -1,8 +1,8 @@
-# FAUST-partial (FPv1): 3D registration benchmark dataset
+# FPv1: 3D registration benchmark dataset
 
 <br> 
 
-⚠️⚠️⚠️ A new version of the FAUST-partial benchmark is available [here](https://github.com/DavidBoja/exhaustive-grid-search), and we therefore denominate this benchmark as FPv1. Please use the new FAUST-partial benchmark instead of this one. ⚠️⚠️⚠️
+⚠️⚠️⚠️ A new version of the FAUST-partial benchmark has been introduced [here](https://github.com/DavidBoja/exhaustive-grid-search), so we denominate this one as FPv1. Please use the new FAUST-partial benchmark instead of this one. ⚠️⚠️⚠️
 
 <br>
 
