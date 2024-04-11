@@ -1,4 +1,10 @@
-# FAUST-partial: 3D registration benchmark dataset
+# FAUST-partial (FPv1): 3D registration benchmark dataset
+
+<br> 
+
+⚠️⚠️⚠️ A new version of the FAUST-partial benchmark is available [here](https://github.com/DavidBoja/exhaustive-grid-search), and we therefore denominate this benchmark as FPv1. Please use the new FAUST-partial benchmark instead of this one. ⚠️⚠️⚠️
+
+<br>
 
 [[Paper](https://arxiv.org/abs/2211.16301)][[Model Implementation](https://github.com/DavidBoja/greedy-grid-search)] </br >
 Code for creating the FAUST-partial 3D registration benchmark from the paper: "Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration" presented at the BMVC 2022 workshop (URCV 22). For the baseline implementation please check [this Github repo](https://github.com/DavidBoja/greedy-grid-search).
