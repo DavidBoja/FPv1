@@ -1,16 +1,12 @@
 # FPv1: 3D registration benchmark dataset
 
-<br> 
-
-⚠️⚠️⚠️ A new version of the FAUST-partial benchmark has been introduced [here](https://github.com/DavidBoja/exhaustive-grid-search), so we denominate this one as FPv1. Please use the new FAUST-partial benchmark instead of this one. ⚠️⚠️⚠️
-
-<br>
-
-Code for creating the FAUST-partial (now called FPv1) 3D registration benchmark from the paper: [Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration](https://arxiv.org/abs/2211.16301) presented at the BMVC 2022 workshop (URCV 22). <br>
+Code for creating the FPv1 (called FAUST-partial in the paper) 3D registration benchmark from the paper: [Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration](https://arxiv.org/abs/2211.16301) presented at the BMVC 2022 workshop (URCV 22). <br>
 For the baseline implementation please check [this Github repo](https://github.com/DavidBoja/greedy-grid-search).
 
+⚠️⚠️⚠️ A new version of the FAUST-partial benchmark has been introduced [here](https://github.com/DavidBoja/exhaustive-grid-search) and is the reason why we rename this one as FPv1. Please use the new FAUST-partial benchmark instead of this one. ⚠️⚠️⚠️
+
 <p align="center">
-  <img src="https://github.com/DavidBoja/FAUST-partial/blob/main/assets/FAUST-partial-teaser.png" width="1000">
+  <img src="https://github.com/DavidBoja/FPv1/blob/main/assets/FAUST-partial-teaser.png" width="1000">
 </p>
 
 The benchmark generation for a single scan from the FAUST training dataset [1] can be summarized as follows:
