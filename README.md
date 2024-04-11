@@ -6,7 +6,7 @@
 
 <br>
 
-[[Paper](https://arxiv.org/abs/2211.16301)][[Model Implementation](https://github.com/DavidBoja/greedy-grid-search)] </br >
+[[Paper](https://arxiv.org/abs/2211.16301)]
 Code for creating the FAUST-partial 3D registration benchmark from the paper: "Challenging the Universal Representation of Deep Models for 3D Point Cloud Registration" presented at the BMVC 2022 workshop (URCV 22). For the baseline implementation please check [this Github repo](https://github.com/DavidBoja/greedy-grid-search).
 
 <p align="center">
